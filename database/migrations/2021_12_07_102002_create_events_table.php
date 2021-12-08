@@ -19,7 +19,8 @@ class CreateEventsTable extends Migration
           $table->string('event_location');
           $table->integer('event_start_date');
           $table->integer('event_end_date');
-          $table->decimal('event_price', 9,2 )->nullable();
+          $table->decimal('event_price_min', 9,2 )->nullable();
+          $table->decimal('event_price_max', 9,2 )->nullable();
           $table->string('event_performances')->nullable();
           $table->string('image_url')->nullable();
           $table->string('event_categories')->nullable();
