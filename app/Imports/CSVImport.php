@@ -2,7 +2,7 @@
 
 namespace App\Imports;
 
-use App\Models\CSVEvent;
+use App\Models\Events;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
@@ -17,7 +17,7 @@ class CSVImport implements ToModel, WithHeadingRow
     {
 
       //inserts data from the user uploaded spreadsheet
-      return new CSVEvent([
+      return new Events([
 
           'event_name'           => $row['name'],
           'event_location'       => $row['event_location'],
