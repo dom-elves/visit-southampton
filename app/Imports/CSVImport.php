@@ -25,7 +25,7 @@ class CSVImport implements ToModel, WithHeadingRow
           'event_end_date'       => $row['end_date'],
           //price not available in csv data
           //performances not available in csv data
-          'event_photo'          => $row['event_photo'],
+          'image_url'          => $row['event_photo'],
           //categories not available in csv data
           'event_tickets_url'    => $row['event_web_link'],
           'event_contact_info'   => $row['event_telephone'],
